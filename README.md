@@ -1,6 +1,12 @@
 # Income-Tax-using-Blockchain
 
-Blockchain is an ideal technology which could disrupt the Indian Tax System by overcoming all the roadblocks previously mentioned. Our idea and motive is to Transparent and Immutable Taxing System so as to see corruption less India Using Blockchain.The below salient features are included 
+Motive and Objective of selecting the usecase of Income Tax
+
+Blockchain has the power to disrupt and strongly reorganize accounting and the way tax payments are processed. As the technology is still in its infancy, introducing Blockchain to the tax authorities would require a revolution in both governmental databases and network systems.
+
+
+
+Blockchain is an ideal technology which could disrupt the Indian Tax System by overcoming all the roadblocks previously mentioned. Our idea and obective of the project  is to "Transparent and Immutable Taxing System so as to see corruption less India" Using Blockchain.The below salient features are included 
 
 
 (i) Tracking where and when tax  has been paid, and in doing so reduce tax fraud .
