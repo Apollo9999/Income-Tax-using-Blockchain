@@ -5,7 +5,7 @@ contract Migrations {
     uint public last_completed_migration;
 
     //function Migrations() public {
-    constructor() public { 
+    constructor() public { //replaces the above line as of version 0.4.22
       owner = msg.sender;
     }
 
