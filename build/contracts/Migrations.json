@@ -69,9 +69,9 @@
   "sourceMap": "26:594:0:-;;;158:101;8:9:-1;5:2;;;30:1;27;20:12;5:2;158:101:0;242:10;234:5;;:18;;;;;;;;;;;;;;;;;;26:594;;;;;;",
   "deployedSourceMap": "26:594:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;447:171;;8:9:-1;5:2;;;30:1;27;20:12;5:2;447:171:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;78:36;;8:9:-1;5:2;;;30:1;27;20:12;5:2;78:36:0;;;;;;;;;;;;;;;;;;;;;;;52:20;;8:9:-1;5:2;;;30:1;27;20:12;5:2;52:20:0;;;;;;;;;;;;;;;;;;;;;;;;;;;334:107;;8:9:-1;5:2;;;30:1;27;20:12;5:2;334:107:0;;;;;;;;;;;;;;;;;;;;;;;;;;447:171;511:19;313:5;;;;;;;;;;;299:19;;:10;:19;;;295:26;;;544:11;511:45;;564:8;:21;;;586:24;;564:47;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;564:47:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;564:47:0;;;;295:26;447:171;;:::o;78:36::-;;;;:::o;52:20::-;;;;;;;;;;;;;:::o;334:107::-;313:5;;;;;;;;;;;299:19;;:10;:19;;;295:26;;;425:9;398:24;:36;;;;295:26;334:107;:::o",
   "source": "pragma solidity ^0.4.24;\n\ncontract Migrations {\n    address public owner;\n    uint public last_completed_migration;\n\n    //function Migrations() public {\n    constructor() public { //replaces the above line as of version 0.4.22\n      owner = msg.sender;\n    }\n\n    modifier restricted() {\n      if (msg.sender == owner) _;\n    }\n\n    function setCompleted(uint completed) public restricted {\n      last_completed_migration = completed;\n    }\n\n    function upgrade(address new_address) public restricted {\n      Migrations upgraded = Migrations(new_address);\n      upgraded.setCompleted(last_completed_migration);\n    }\n}",
-  "sourcePath": "C:\\Users\\aznca\\Desktop\\blockchain-tax\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\Users\\kiran\\Desktop\\blockchain-tax\\contracts\\Migrations.sol",
   "ast": {
-    "absolutePath": "/C/Users/aznca/Desktop/blockchain-tax/contracts/Migrations.sol",
+    "absolutePath": "/C/Users/kiran/Desktop/blockchain-tax/contracts/Migrations.sol",
     "exportedSymbols": {
       "Migrations": [
         56
@@ -721,7 +721,7 @@
     "src": "0:620:0"
   },
   "legacyAST": {
-    "absolutePath": "/C/Users/aznca/Desktop/blockchain-tax/contracts/Migrations.sol",
+    "absolutePath": "/C/Users/kiran/Desktop/blockchain-tax/contracts/Migrations.sol",
     "exportedSymbols": {
       "Migrations": [
         56
