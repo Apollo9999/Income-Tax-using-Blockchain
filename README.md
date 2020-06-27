@@ -1,5 +1,6 @@
 # Income-Tax-using-Blockchain
 
+
 Motive and Objective of selecting the usecase of Income Tax
 
 Blockchain has the power to disrupt and strongly reorganize accounting and the way tax payments are processed. As the technology is still in its infancy, introducing Blockchain to the tax authorities would require a revolution in both governmental databases and network systems.
