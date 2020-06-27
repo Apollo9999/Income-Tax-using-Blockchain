@@ -14,3 +14,5 @@ Blockchain is an ideal technology which could disrupt the Indian Tax System by o
 (v)Giving more visibility to micro transactions such as those done by individuals as part of the sharing economy.
 
 In addition, this system also features an user friendly interface which enables every citizen of the country to potentially know how his contributed tax has been put in use .
+
+VALUE ADDED Bonus Incentive of the System is to Enhance  Right to Information Act
