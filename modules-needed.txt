@@ -1,0 +1,4 @@
+lite-server latest -> npm i lite-server
+web3 1.0.0.beta36 -> npm i web3
+truffle 4.1.14 -> npm i truffle
+solc 0.4.25 -> npm i solc

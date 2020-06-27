@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Tax Application</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <!--Simulate which functionality to show-->
+    <div id="myModal" class="modal modal-wide fade">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Application Setup</h4>
+          </div>
+          <div class="modal-body">
+            <p>Are you a government employee or taxpayer?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal" id="employee">Employee</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" id="taxpayer">Taxpayer</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-sm-8 col-sm-push-2">
+          <p class="h1 text-center">Tax Application</p>
+          <hr/>
+          <br/>
+        </div>
+      </div>
+
+      <!--only for admin-->
+      <div id="addTaxpayerRow" class="row"><!--transaction rows-->
+        <p class="h2 text-center">Add a taxpayer with blockchain address, national ID and name</p>
+        <form id="addTaxpayerForm" action="index.html">
+            <div class="form-group">
+              <input type="text" name="payeraddress" class="form-control" placeholder="Address">
+            </div>
+            <div class="form-group">
+              <input type="text" name="payerid" class="form-control" placeholder="ID">
+            </div>
+            <div class="form-group">
+              <input type="text" name="payername" class="form-control" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Add a Taxpayer" class="btn btn-primary">
+            </div>
+        </form>
+      </div>
+
+      <!--only for admin-->
+      <div id="addTaxRow" class="row">
+        <p class="h2 text-center">Add a tax for a taxpayer with national ID, amount and year</p>
+        <form id="addTaxForm" action="index.html">
+          <div class="form-group">
+            <input type="text" name="taxid" class="form-control" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <input type="text" name="taxamount" class="form-control" placeholder="Amount">
+          </div>
+          <div class="form-group">
+            <input type="text" name="taxyear" class="form-control" placeholder="Year">
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Add tax for taxpayer" class="btn btn-primary">
+          </div>
+        </form>
+      </div>
+
+      <div id="payTaxRow" class="row">
+        <p class="h2 text-center">Pay a tax amount for a year with national ID, amount and year</p>
+        <form id="payTaxForm" action="index.html">
+          <div class="form-group">
+            <input type="text" name="payid" class="form-control" placeholder="ID">
+          </div>
+          <div class="form-group">
+            <input type="text" name="payamount" class="form-control" placeholder="Amount">
+          </div>
+          <div class="form-group">
+            <input type="text" name="payyear" class="form-control" placeholder="Year">
+          </div>
+          <div class="form-group">
+            <input type="submit'" value="Pay a tax amount" class="btn btn-primary">
+          </div>
+        </form>
+      </div><!--end transaction rows-->
+
+      <div class="row"><!--display rows-->
+        <!--only for admin-->
+        <div id="displayCountRow" class="col-6 col-md-4">
+          <p class="h2 text-center">Get total count of taxpayers</p>
+          <button class="btn btn-default btn-adopt" type="button" id="totaltaxpayers">
+            Total Taxpayer Amount</button>
+          <label>Total:</label>
+          <span class="label label-default" id="returnedcount"></span>
+        </div>
+
+        <!--only for admin-->
+        <div id="displayInfoRow" class="col-6 col-md-4">
+          <p class="h2 text-center">Get information about a taxpayer</p>
+          <form id="taxpayerDescription" action="index.html">
+            <div class="form-group">
+              <input type="text" name="taxpayerid" class="form-control" placeholder="ID">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Get a taxpayer info" class="btn btn-primary">
+            </div>
+          </form>
+          <label>Address</label>
+          <span class="label label-default" id="taxpayer-description1"></span>
+          <label>ID</label>
+          <span class="label label-default" id="taxpayer-description2"></span>
+          <label>Name</label>
+          <span class="label label-default" id="taxpayer-description3"></span>
+        </div>
+
+        <div id="displayAmtRow" class="col-6 col-md-4">
+            <p class="h2 text-center">Enter 1 for balance, 2 for paid, 3 for owed totals in 2nd input</p>
+          <form id="displayAmount" action="index.html">
+            <div class="form-group">
+              <input type="text" name="personid" class="form-control" placeholder="ID">
+            </div>
+            <div class="form-group">
+              <input type="text" name="selection" class="form-control" placeholder="selection">
+            </div>
+            <div class="form-group">
+              <input type="submit" value="Get balance, paid or owed" class="btn btn-primary">
+            </div>
+          </form>
+          <label>Balance</label>
+          <span class="label label-default" id="tax-amt-display"></span>
+        </div>
+      </div><!--end display rows-->
+    </div><!--end container-->
+
+    <footer class="footer text-center">
+      <p class="h4 text-center">End</p>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!--anything not included here will not be found, even if in js folder-->
+    <script src="js/bootstrap.min.js"></script>
+    <!--this before truffle-contract-->
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js"></script>
+    <!--issues with truffle-contract, doesnt work with web3 1.0.xxx, use pure web3-->
+    <!--<script src="js/truffle-contract.js"></script>-->
+    <script src="js/app.js"></script>
+  </body>
+</html>
