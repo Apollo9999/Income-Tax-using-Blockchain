@@ -1,6 +1,6 @@
 # Income-Tax-using-Blockchain 
 
-**********tag line Transparent interactions to save people's income for building of National Development*************
+*********************tag line Transparent interactions to save people's income for building of National Development**************************
 
 Developed blockchain based system to monitor the flow of tax in India
 
