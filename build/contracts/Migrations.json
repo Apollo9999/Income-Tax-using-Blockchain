@@ -1449,25 +1449,4 @@
         "MaticWeth": "0x60D4dB9b534EF9260a88b0BED6c486fe13E604Fc"
       }
     }
-  },
-  "Matic": {
-    "NetworkName": "Matic Testnet Mumbai",
-    "ChainId": 80001,
-    "RPC": "https://rpc-mumbai.matic.today",
-    "DaggerEndpoint": "wss://mumbai-dagger.matic.today",
-    "Explorer": "https://mumbai-explorer.matic.today",
-    "Contracts": {
-      "ChildChain": "0x1EDd419627Ef40736ec4f8ceffdE671a30803c5e",
-      "Tokens": {
-        "MaticWeth": "0x4DfAe612aaCB5b448C12A591cD0879bFa2e51d62",
-        "MaticToken": "0x0000000000000000000000000000000000001010",
-        "TestToken": "0xc7bb71b405ea25A9251a1ea060C2891b84BE1929",
-        "RootERC721": "0xa38c6F7FEaB941160f32DA7Bbc8a4897b37876b5"
-      }
-    }
-  },
-  "Heimdall": {
-    "ChainId": "heimdall-80001",
-    "API": "https://heimdall.api.matic.today"
   }
-}
