@@ -1,4 +1,6 @@
-# Income-Tax-using-Blockchain
+# Income-Tax-using-Blockchain 
+
+**********tag line Transparent interactions to save people's income for building of National Development*************
 
 Developed blockchain based system to monitor the flow of tax in India
 
@@ -6,7 +8,7 @@ website link can be found here https://www.sanketpatil.me/blockchain_incometax/
 
 Motive and Objective of selecting the usecase of Income Tax
 
-Blockchain has the power to disrupt and strongly reorganize accounting and the way tax payments are processed. As the technology is still in its infancy, introducing Blockchain to the tax authorities would require a revolution in both governmental databases and network systems.
+Blockchain has the power and scope to disrupt and strongly reorganize accounting and the way tax payments are processed. As the technology is still in its infancy, introducing Blockchain to the tax authorities would require a revolution in both governmental databases and network systems.
 
 Blockchain could be innovative for the industry and will transform the finance function.
 
