@@ -42,4 +42,8 @@ Blockchain is an ideal technology which could disrupt the Indian Tax System by o
 
 In addition, this system also features an user friendly interface which enables every citizen of the country to potentially know how his contributed tax has been put in use .
 
-VALUE ADDED Bonus Incentive of the System is to Enhance  Right to Information Act
+VALUE ADDED Bonus Incentive of the System is to Enhance  Right to Information Act.
+
+
+video submission link details can be found here https://www.youtube.com/watch?v=BCu8q9nusC8&feature=youtu.be
+
